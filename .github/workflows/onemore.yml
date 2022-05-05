@@ -17,5 +17,5 @@ jobs:
           branch: testpr
           base: main
           title: trying for auto pr
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.TOKEN_GITHUB }}
 
