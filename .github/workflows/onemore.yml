@@ -5,16 +5,17 @@ on:
       - testpr
 
 jobs: 
-  runs-on: ubuntu-latest
-  steps: 
-    - name: checking out the code
-      uses: actions/checkout@v2
+  CreatePullRequest:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: checking out the code
+        uses: actions/checkout@v2
 
-    - name: Raise a PR
-      uses: peter-evans/create-pull-request@v3
-      with:
-        branch: testpr
-        base: main
-        title: trying for auto pr
-        token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Raise a PR
+        uses: peter-evans/create-pull-request@v3
+        with:
+          branch: testpr
+          base: main
+          title: trying for auto pr
+          token: ${{ secrets.GITHUB_TOKEN }}
 
