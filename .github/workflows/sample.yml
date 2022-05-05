@@ -9,7 +9,8 @@ jobs:
       - name: echo a string
         run: 
           echo "Hello Workflow"
-      - name: display versions
+        name: display versions
         run:
           node -v
           npm -v
+          
