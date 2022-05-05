@@ -14,7 +14,7 @@ jobs:
       - name: Raise a PR
         uses: peter-evans/create-pull-request@v3
         with:
-          branch: testpr
+          branch: "auto-pr-branch"
           base: main
           title: trying for auto pr
           token: ${{ secrets.TOKEN_GITHUB }}
