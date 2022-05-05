@@ -1,0 +1,12 @@
+name: firstflow
+
+on: push
+
+jobs: 
+  runs-on: ubuntu-latest
+  steps: 
+    - name: echo a string
+      run: 
+        echo "Hello Workflow"
+        node -v
+        npm -v
