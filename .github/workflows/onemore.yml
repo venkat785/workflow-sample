@@ -16,6 +16,9 @@ jobs:
         with:
           branch: "auto-pr-branch"
           base: main
-          title: trying for auto pr
+          title: "trying for auto pr"
           token: ${{ secrets.TOKEN_GITHUB }}
+          body: this is to show auto pr
+          delete-branch: true
+          
 
