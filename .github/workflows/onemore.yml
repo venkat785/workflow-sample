@@ -31,3 +31,14 @@ jobs:
             This is to show automatic PR creation
           token: ${{ secrets.TOKEN_GITHUB }}
           delete-branch: true
+
+      - name: Approve Pull Request 
+        uses: juliangruber/approve-pull-request-action@v1 
+        with: 
+          github-token: ${{ secrets.TOKEN_GITHUB }}
+
+      - name: Merge Pull Request
+        uses: juliangruber/merge-pull-request-action@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
